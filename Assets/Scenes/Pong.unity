@@ -646,6 +646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 619819900}
   - component: {fileID: 619819901}
+  - component: {fileID: 619819902}
   m_Layer: 0
   m_Name: Bottom Wall
   m_TagString: Untagged
@@ -694,6 +695,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &619819902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619819899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab6668f2af81754e958dd61f522e3c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BouncyStrength: 5
 --- !u!1 &709256880
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,6 +751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1243675147}
   - component: {fileID: 1243675148}
+  - component: {fileID: 1243675149}
   m_Layer: 0
   m_Name: Top Wall
   m_TagString: Untagged
@@ -785,6 +800,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1243675149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243675146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab6668f2af81754e958dd61f522e3c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BouncyStrength: 5
 --- !u!1 &1490663005
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,6 +825,7 @@ GameObject:
   - component: {fileID: 1490663009}
   - component: {fileID: 1490663008}
   - component: {fileID: 1490663007}
+  - component: {fileID: 1490663011}
   - component: {fileID: 1490663010}
   m_Layer: 0
   m_Name: Player Paddle
@@ -932,6 +961,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!114 &1490663011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490663005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab6668f2af81754e958dd61f522e3c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BouncyStrength: 10
 --- !u!1 &1905961342
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,6 +986,7 @@ GameObject:
   - component: {fileID: 1905961346}
   - component: {fileID: 1905961345}
   - component: {fileID: 1905961344}
+  - component: {fileID: 1905961348}
   - component: {fileID: 1905961347}
   m_Layer: 0
   m_Name: Computer Paddle
@@ -1080,3 +1123,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   ball: {fileID: 337546338}
+--- !u!114 &1905961348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905961342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab6668f2af81754e958dd61f522e3c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BouncyStrength: 10

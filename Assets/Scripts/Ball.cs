@@ -26,4 +26,9 @@ public class Ball : MonoBehaviour
         Vector2 direction = new Vector2(x, y);      //yön adinda bir degisken atayip yön degerlerini x ve y olarak atadik
         _rigidbody.AddForce(direction * this.speed);        // bu rigidbodye kuvvet ekledik. Formülünü de kuvvet * hýz olarak girdik
     }
+
+    public void AddForce(Vector2 force)
+    {
+        _rigidbody.AddForce(force);
+    }
 }
