@@ -15,6 +15,7 @@ public class Ball : MonoBehaviour
     private void Start()
     {
         ResetPosition();
+        AddStartingForce();     //baslangic kuvvetini ekledik
     }
 
     public void ResetPosition()  //Pozisyon sýfýrlama 
@@ -22,10 +23,9 @@ public class Ball : MonoBehaviour
         _rigidbody.position = Vector3.zero;     //Rigidbodye sahip olan nesnenin(topun) posizyonunu sifirladik
         _rigidbody.velocity = Vector3.zero;     //Rigidbodye sahip olan nesnenin(topun) hizini sifirladik
 
-        AddStartingForce();     //baslangic kuvvetini ekledik
     }
 
-    private void AddStartingForce()  //topun baslangicdaki gucu ve yonu burada belirleniyor
+    public void AddStartingForce()  //topun baslangicdaki gucu ve yonu burada belirleniyor
     {
         float x = Random.value < 0.5f ? -1.0f : 1.0f;  //x yonu icin Random value kullanmamizin nedeni 0 ve 1 araliginda degerler uretmesi. Bu random deger eger 0.5 ten kucukse -1, buyukse +1 degerini alacak.
         float y = Random.value < 0.5f ? Random.Range(-1.0f, -0.5f) :        //ayni sekilde random deger kucukse -1 ve -0.5 arasinda deger uretilecek.
