@@ -14,7 +14,15 @@ public class Ball : MonoBehaviour
 
     private void Start()
     {
-        AddStartingForce();
+        ResetPosition();
+    }
+
+    public void ResetPosition()  //Pozisyon sýfýrlama 
+    {
+        _rigidbody.position = Vector3.zero;     //Rigidbodye sahip olan nesnenin(topun) posizyonunu sifirladik
+        _rigidbody.velocity = Vector3.zero;     //Rigidbodye sahip olan nesnenin(topun) hizini sifirladik
+
+        AddStartingForce();     //baslangic kuvvetini ekledik
     }
 
     private void AddStartingForce()  //topun baslangicdaki gucu ve yonu burada belirleniyor
